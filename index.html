@@ -27,12 +27,13 @@
 
     #prev-btn,
     #next-btn {
+      border-radius: 20%;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 24px;
+      font-size: 14px;
       cursor: pointer;
-      background-color: #333;
+      background: rgba(39, 39, 39, 0.4);
       color: #fff;
       border: none;
       padding: 10px;
@@ -40,11 +41,11 @@
     }
 
     #prev-btn {
-      left: 10px;
+      left: 1%;
     }
 
     #next-btn {
-      right: 10px;
+      right: 1%;
     }
 
     #click-info-container {
@@ -67,6 +68,13 @@
     #click-info:hover {
       transform: scale(1.05);
     }
+
+    @media screen and (max-width: 600px) {
+      #prev-btn,
+      #next-btn {
+       display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -83,6 +91,9 @@
     <img class="image" src="src/img4.jpeg" alt="Image 4" oncontextmenu="return false;" draggable="false">
     <img class="image" src="src/img5.jpeg" alt="Image 5" oncontextmenu="return false;" draggable="false">
     <img class="image" src="src/img6.jpeg" alt="Image 6" oncontextmenu="return false;" draggable="false">
+    <img class="image" src="src/img7.jpeg" alt="Image 7" oncontextmenu="return false;" draggable="false">
+    <img class="image" src="src/img8.jpeg" alt="Image 8" oncontextmenu="return false;" draggable="false">
+    <img class="image" src="src/img9.jpeg" alt="Image 9" oncontextmenu="return false;" draggable="false">
   </div>
   <button id="next-btn">&gt;</button>
 </div>
@@ -146,5 +157,8 @@
   }
 </script>
 
+
 </body>
+
+
 </html>
